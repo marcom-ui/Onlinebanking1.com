@@ -1,0 +1,42 @@
+bank-portfolio-starter/
+├─ .env.example
+├─ docker-compose.yml
+├─ README.md
+├─ backend/
+│  ├─ Dockerfile
+│  ├─ package.json
+│  ├─ tsconfig.json (optional)
+│  ├─ src/
+│  │  ├─ index.js
+│  │  ├─ db.js
+│  │  ├─ seed.js
+│  │  ├─ schema.sql
+│  │  ├─ auth.js
+│  │  ├─ accounts.js
+│  │  ├─ transfers.js
+│  │  ├─ statements.js
+│  │  └─ middleware/
+│  │     ├─ authMiddleware.js
+│  │     ├─ audit.js
+│  │     └─ rateLimiter.js
+│  └─ .env (dev; not committed)
+├─ frontend/
+│  ├─ Dockerfile
+│  ├─ package.json
+│  ├─ index.html
+│  ├─ vite.config.js
+│  └─ src/
+│     ├─ main.jsx
+│     ├─ App.jsx
+│     ├─ api.js
+│     ├─ pages/
+│     │  ├─ Login.jsx
+│     │  ├─ Dashboard.jsx
+│     │  └─ Statements.jsx
+│     ├─ components/
+│     │  ├─ AccountCard.jsx
+│     │  ├─ TransactionsTable.jsx
+│     │  └─ TransferForm.jsx
+│     └─ styles.css
+└─ .github/
+   └─ workflows/ci.yml
